@@ -1,8 +1,9 @@
+#유클리드 호제법
 a, b = map(int, input().split())
 
 def gcd(a, b):
     while b > 0:
-        a, b = b, a % b
+        a, b = b, a % b #a = a%b, a,b = b,a
     return a
 
 def lcm(a, b):
