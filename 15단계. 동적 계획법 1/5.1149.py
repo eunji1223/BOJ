@@ -13,4 +13,6 @@ for i in range(1,len(p)):
 print(min(p[n-1][0],p[n-1][1],p[n-1][2])) #min(96,172,185)
 
 
+
+
     
