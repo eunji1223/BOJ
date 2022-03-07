@@ -8,3 +8,4 @@ for i in range(2,N+1):
         elif j==9: DP[i][j]=DP[i-1][j-1]
         else: DP[i][j]=DP[i-1][j-1]+DP[i-1][j+1]
 print(sum(DP[N])%1000000000)
+
