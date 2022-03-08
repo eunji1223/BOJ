@@ -11,3 +11,5 @@ for i in range(1,N):
                 D[i]=D[j]+1
             else: D[i]=D[i]
 print(max(D))
+
+#이중 for문 --> O(n^2)
