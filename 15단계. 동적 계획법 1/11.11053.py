@@ -6,7 +6,7 @@ A=list(map(int,input().split()))
 D=[1]*(N+1)
 for i in range(1,N):
     for j in range(0,i):
-        if(A[j]<=A[i]):
+        if(A[j]<A[i]):
             if D[j]+1>D[i]:
                 D[i]=D[j]+1
             else: D[i]=D[i]
