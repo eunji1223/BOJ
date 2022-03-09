@@ -6,6 +6,6 @@ for i in range(N):
 D[0]=S[0] #첫 계단 값
 D[1]=S[0]+S[1] #첫 계단 + 다음 계단 값(1칸 전 계단(최고값)+ 현재 값)
 D[2]=max(S[1]+S[2],S[0]+S[2]) #1칸 전 계단, 2칸 전 계단 최고 값 + 현재 값
-for i in range(3,N):
-    D[i]=max(D[i-3]+S[i-1]+S[i],D[i-2]+S[i])
+for i in range(3,N): #세 번째 계단부터~
+    D[i]=max(D[i-3]+S[i-1]+S[i],D[i-2]+S[i]) #마지막 계단 오르는 경우를 고
 print(D[N-1])
