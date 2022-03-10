@@ -31,3 +31,5 @@ A = input()
 B = input() #알파벳 대문자로만 구성된 A,B가 존재
 lis, x = LIS_DP(A+" "+B)
 print(lis)
+
+
