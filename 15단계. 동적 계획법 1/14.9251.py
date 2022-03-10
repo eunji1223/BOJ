@@ -1,3 +1,4 @@
+"""
 def print_IS(seq, x):
     for i in range(len(seq)):
         if x[i]: 
@@ -31,5 +32,18 @@ A = input()
 B = input() #알파벳 대문자로만 구성된 A,B가 존재
 lis, x = LIS_DP(A+" "+B)
 print(lis)
+"""
+
+A=input()
+B=input()
+DP=[[0]*(len(B)+1)for _ in range(len(A)+1)]
+
+for i in range(1,len(A)+1):
+    for j in range(1,len(B)+1):
+        if A[i-1]==B[j-1]:
+            DP[i][j]=DP[i-1][j-1]+1
+        else:
+            DP[i][j]=max(DP[i-1][j],DP[i][j-1])
+print(DP[-1][-1])
 
 
