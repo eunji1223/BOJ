@@ -16,24 +16,24 @@ while S!='.':
     S=input()
 """
 
-lines=input()
-while lines!='.':
+S=input()
+while S!='.':
     stack=[]
-    for t in lines:
-        if t in '([':
-            stack.append(t)
-        elif t==']':
+    for i in S:
+        if i in '([':
+            stack.append(i)
+        elif i==']':
             if not stack or stack.pop()!='[':
                 print('no')
                 break
-        elif t==')':
+        elif i==')':
             if not stack or stack.pop()!='(':
                 print('no')
                 break
-        elif t=='.':
+        elif i=='.':
             if stack: print('no')
             else: print('yes')
-    lines=input()
+    S=input()
     
         
     
