@@ -11,3 +11,5 @@ def Knapsack(i,T):
     x[i]=1
     if s+size[i]<=K:
         B
+
+        
