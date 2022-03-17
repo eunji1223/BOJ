@@ -11,3 +11,5 @@ if N>2:
 for i in range(3,N):
     DP[i]=max(DP[i-1],DP[i-3]+A[i-1]+A[i],DP[i-2]+A[i])
 print(DP[N-1])
+
+
