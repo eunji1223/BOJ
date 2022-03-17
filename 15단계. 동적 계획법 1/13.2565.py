@@ -15,4 +15,5 @@ for i in range(n):
     dp[i] += 1
 print(n - max(dp))
 """
+#다른 사람 코드
 
