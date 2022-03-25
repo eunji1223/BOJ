@@ -1,0 +1,7 @@
+﻿  소스.cpp
+C:\Users\user\OneDrive\바탕 화면\tictactoe\tictactoe\소스.cpp(32,9): warning C4101: 'sum' :참조되지 않은 지역 변수입니다.
+C:\Users\user\OneDrive\바탕 화면\tictactoe\tictactoe\소스.cpp(31,12): warning C4101: 'j' :참조되지 않은 지역 변수입니다.
+C:\Users\user\OneDrive\바탕 화면\tictactoe\tictactoe\소스.cpp(31,9): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
+C:\Users\user\OneDrive\바탕 화면\tictactoe\tictactoe\소스.cpp(67,12): warning C4101: 'j' :참조되지 않은 지역 변수입니다.
+C:\Users\user\OneDrive\바탕 화면\tictactoe\tictactoe\소스.cpp(67,9): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
+  tictactoe.vcxproj -> C:\Users\user\OneDrive\바탕 화면\tictactoe\x64\Debug\tictactoe.exe
