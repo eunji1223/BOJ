@@ -21,3 +21,5 @@ def sol(A,i,p,m,mu,d):
 sol(AN[0],1,p,m,mu,d)
 print(maxN)
 print(minN)
+
+
