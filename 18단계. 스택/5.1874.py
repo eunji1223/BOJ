@@ -1,1 +1,4 @@
-#스택 수열 --> 문제 아직 이해 X
+n=int(input())
+for i in range(n):
+    N=int(input())
+    for j in r
