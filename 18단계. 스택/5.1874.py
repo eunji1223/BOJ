@@ -13,5 +13,5 @@ for i in range(n):
 if not stack: #최종 결과 값 출력
     print('\n'.join(ans))
 else:
-    print('No')
+    print('No') #아닐 경우 No출력
 
