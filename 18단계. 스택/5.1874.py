@@ -23,7 +23,6 @@ else:
     for i in ans:
         print(i)
 """
-
 n=int(input())
 stack=[]
 result=[]
