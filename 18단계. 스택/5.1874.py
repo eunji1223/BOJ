@@ -29,9 +29,9 @@ result=[]
 count=0
 X=True
 
-for i in range(n):
-    num=int(input())
-    while count<num:
+for i in range(n): #n만큼 반복
+    num=int(input()) 
+    while count<num: 
         count+=1
         stack.append(count)
         result.append("+")
