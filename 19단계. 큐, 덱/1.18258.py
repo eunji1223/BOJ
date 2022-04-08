@@ -34,18 +34,20 @@ Q=Queue()
 N=int(input())
 for i in range(N):
     order=input()
-    if order in 'push':
+    print(order)
+    if 'push' in order:
         order,a=order.split()
-        print(Q.push())
-    elif order in 'pop':
+        Q.push(a)
+    elif 'pop' in order:
         print(Q.pop())
-    elif order in 'front':
+    elif 'front' in order:
         print(Q.front())
-    elif order in 'back':
+    elif 'back' in order:
         print(Q.back())
-    elif order in 'size':
+    elif 'size' in order:
         print(Q.size())
-    elif order in 'empty':
+    elif 'empty' in order:
         print(Q.empty())
+
 
         
