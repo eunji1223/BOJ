@@ -16,12 +16,13 @@ class Queue:
             self.front+=1
             return x
     def front(self):
-        if len(self.items)==0 or self.front==len(self.items):
+        if self.size()==0 or self.front==len(self.items):
             return -1
         else:
+            print(self.front)
             return self.items[self.front]
     def back(self):
-        if len(self.items)==0 or self.front==len(self.items):
+        if self.size()==0 or self.front==len(self.items):
             return -1
         else:
             return self.items[-1]
