@@ -26,7 +26,7 @@ class Queue:
         else:
             return self.items[-1]
     def empty(self):
-        if self.size(self)==0:
+        if self.size()==0:
             return 1
         else: return 0
         
@@ -34,7 +34,6 @@ Q=Queue()
 N=int(input())
 for i in range(N):
     order=input()
-    print(order)
     if 'push' in order:
         order,a=order.split()
         Q.push(a)
