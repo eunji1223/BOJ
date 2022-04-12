@@ -1,7 +1,1 @@
-#임시 코드
-
-
-
-
-
-
+sdk=[list(map(int,input().split())) for _ in range(9]
