@@ -20,18 +20,18 @@ result=False
 def solve(count):
     global result
     if result: return
-    if x==len(zeros):
+    if count==len(zero_loc):
         for row in sdk:
             print(*row)
         flag=True
         return
     else:
-        (i,j)=zero_loc[x]
+        (i,j)=zero_loc[count]
         N=findN(i,j)
 
         for num in N:
             sdk[i][j]=num
-            solve(x+1)
+            solve(count+1)
             sdk[i][j]=0
 solve(0)
     
