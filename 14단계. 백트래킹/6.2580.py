@@ -16,5 +16,22 @@ def findN(y,x):
                 numbers.remove(board[i][j])
     return number
 
+global result
 def solve(count):
+    global result
+    if result: return
+    if x==len(zeros):
+        for row in sdk:
+            print(*row)
+        flag=True
+        return
+    else:
+        (i,j)=zero_loc[x]
+        N=findN(i,j)
+
+        for num in N:
+            sdk[i][j]=num
+            dfs(x+1)
+            sdk[i][j]=0
+dfs(0)
     
