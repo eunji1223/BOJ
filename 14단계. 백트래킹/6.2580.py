@@ -16,7 +16,7 @@ def findN(y,x):
                 numbers.remove(board[i][j])
     return number
 
-global result
+result=False
 def solve(count):
     global result
     if result: return
@@ -31,7 +31,7 @@ def solve(count):
 
         for num in N:
             sdk[i][j]=num
-            dfs(x+1)
+            solve(x+1)
             sdk[i][j]=0
-dfs(0)
+solve(0)
     
