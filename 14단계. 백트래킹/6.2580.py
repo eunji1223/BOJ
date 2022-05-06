@@ -1,3 +1,33 @@
+import sys
+
+sdk=[list(map(int,input().split())) for _ in range(9)]
+zero_loc=[(i,j) for i in range(9) for j in range(9) if sdk[i][j]==0]
+def findN(r,c):
+    number=set(range(1,10))
+    number-=set(sdk[r])
+    test=set()
+    for i in range(9):
+        test.add(sdk[i][c])
+    number-=test
+    test=set()
+    for i in range(r//3*3,r//3*3+3):
+        for j in range(c//3*3,c//3*3+3):
+            test.add(sdk[i][j])
+    number-=test
+    return tuple(number)
+
+def solve(i):
+    if i==len(zero_loc):
+        [print(*row) for row in sdk]
+        sys.exit()
+    r,c=zero_loc[i]
+    number=findN(r,c)
+    for num in number:
+        sdk[r][c]=num
+        solve(i+1)
+        sdk[r][c]=0
+solve(0)
+"""
 sdk=[list(map(int,input().split())) for _ in range(9)]
 zero_loc=[(i,j) for i in range(9) for j in range(9) if sdk[i][j]==0]
 
@@ -35,3 +65,4 @@ def solve(count):
             sdk[i][j]=0
 solve(0)
     
+"""
