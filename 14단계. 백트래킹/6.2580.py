@@ -1,8 +1,8 @@
 import sys
 
 sdk=[list(map(int,input().split())) for _ in range(9)]
-zero_loc=[(i,j) for i in range(9) for j in range(9) if sdk[i][j]==0]
-def findN(r,c):
+zero_loc=[(i,j) for i in range(9) for j in range(9) if sdk[i][j]==0] #zero 위치를 저장
+def findN(r,c): # 각 위치에 대해 가능한 수를 확인 후 그 수 저장
     number=set(range(1,10))
     number-=set(sdk[r])
     test=set()
@@ -17,7 +17,7 @@ def findN(r,c):
     return tuple(number)
 
 def solve(i):
-    if i==len(zero_loc):
+    if i==len(zero_loc): #만약 모든 칸이 채워지면 출
         [print(*row) for row in sdk]
         sys.exit()
     r,c=zero_loc[i]
