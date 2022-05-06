@@ -29,7 +29,7 @@ def solve(i):
 solve(0)
 
 
-"""
+""" #런타임에러 발생(pypy로 제출했음에도 불구하고 오랜 시간 소요)
 sdk=[list(map(int,input().split())) for _ in range(9)]
 zero_loc=[(i,j) for i in range(9) for j in range(9) if sdk[i][j]==0]
 
