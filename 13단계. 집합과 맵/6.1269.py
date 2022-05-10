@@ -2,5 +2,4 @@ AN,BN=map(int,input().split())
 A=set(list(map(int,input().split())))
 B=set(list(map(int,input().split())))
 AmB=A^B
-BmA=B^A
-print(len(AmB)+len(BmA))
+print(len(AmB)) #차집합 -,difference / 대칭 차집합 ^
