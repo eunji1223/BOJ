@@ -19,7 +19,7 @@ for i in range(1,k):
 result=Br*Bc-NL[ridx+2]*NL[cidx+2]
 print(7*result)
 """
-"""
+""" #런타임 에
 k=int(input())
 NL=[list(map(int,input().split())) for _ in range(k-1)]
 Br=0
@@ -44,6 +44,8 @@ print(result)
 #가장 긴 가로변 양옆에 붙어있는 변(세로변)들의 차이 : 뺄 사각형의 세로
 #가장 긴 세로변 양옆에 붙어있는 변(가로변)들의 차이 : 뺄 사각형의 가로
 """
+#--> 분석하기
+
 melon = int(input()) # 참외 개수 K
 values = [input().split() for _ in range(6)] # 나머지 2~7 line의 6 줄을 입력 받는다.
 directions = [int(v[0]) for v in values] # 방향을 뽑아내서 저장한다.
