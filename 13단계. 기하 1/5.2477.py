@@ -1,18 +1,19 @@
 k=int(input())
 NL=[]
-Br=Bc=ridx=cidx=0
+Br=0
+Bc=0
+ridx=0
+cidx=0
 for i in range(1,k):
     n,l=map(int,input().split())
     if i%2==0:
         if l>Br:
             Br=l
             ridx=i
-            print("실행")
     else:
         if l>Bc:
             Bc=l
-            cidx=0
+            cidx=i
     NL.append(l)
-print(ridx,cidx)
-result=Br*Bc-NL[ridx+3]*NL[cidx+3]
+result=Br*Bc-NL[ridx+2]*NL[cidx+2]
 print(7*result)
