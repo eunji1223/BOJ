@@ -27,3 +27,5 @@ for i in range(P):
     elif ((x-(X+W))*(x-(W+X))+(y-(Y+H/2))*(y-(Y+H/2))<=(H/2)*(H/2) and X+W<x):
         count+=1
 print(count)
+
+#https://rimkongs.tistory.com/130
