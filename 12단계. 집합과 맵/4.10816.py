@@ -1,3 +1,4 @@
+"""
 #아직 해결 X
 def binary(n,N,start,end):
     if start>end:
@@ -18,3 +19,4 @@ for i in N:
     end=len(N)-1
     if i not in D:
         D[i]=binary(n,N,start,end)
+"""
