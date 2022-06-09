@@ -26,7 +26,7 @@ for i in range(0, len(tem_list)-K):
 
 print(max(result_list))
 
-""" # --> 최
+""" # --> 최종
 import sys
 input = sys.stdin.readline
 N, K = map(int, input().split())
