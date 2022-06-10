@@ -1,3 +1,5 @@
+import sys
+input = sys.stdin.readline
 listN=[]
 str=input()
 for i in range(1,len(str)+1):
