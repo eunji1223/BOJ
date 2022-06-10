@@ -50,7 +50,7 @@ for n in SN:
 for m in NM:
     result = count.get(m)
     if result == None: print(0, end=' ')
-    else: print(result, end= ' ')
+    else: print(result, end)
         
 
 
