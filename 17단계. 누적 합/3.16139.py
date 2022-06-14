@@ -24,4 +24,5 @@ for i in range(q):
     else:
         result=Psum[int(r)][ord(s)-97] # 0부터라 r까지의 값을 구함
     print(result)
-    
+
+# python으로 제출할 땐 50점이더니 pypy로 제출하니 100점 나왔당 처리속도차이인가
