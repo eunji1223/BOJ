@@ -29,6 +29,9 @@ prefix[0]=1
 for i in range(N):
     s+=A[i]
     prefix[s%M]+=1
+# 나머지가 같은 두 부분합을 고르면 두 구간은 M의 배수가 됨
+# 나머지가 0인 경우는 부분합 자체가 M의 배수인 경우이므로 두 구간이 아닌 본인
+# 구간도 될 수 있음. INDEX가 0인(부분합 0)인 것을 포
 ans=0
 for i in prefix:
     ans+=i*(i-1)//2
