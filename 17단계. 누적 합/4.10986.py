@@ -26,6 +26,7 @@ prefix = [0 for i in range(M)]
 s=0
 
 prefix[0]=1
+
 for i in range(N):
     s+=A[i]
     prefix[s%M]+=1
