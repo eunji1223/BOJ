@@ -37,3 +37,4 @@ ans=0
 for i in prefix:
     ans+=i*(i-1)//2
 print(ans)
+
