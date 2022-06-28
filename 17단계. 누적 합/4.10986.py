@@ -35,6 +35,6 @@ for i in range(N):
 # 구간도 될 수 있음. INDEX가 0인(부분합 0)인 것을 포
 ans=0
 for i in prefix:
-    ans+=i*(i-1)//2 #이 부분
+    ans+=i*(i-1)//2
 print(ans)
 
