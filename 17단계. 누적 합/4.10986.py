@@ -62,4 +62,17 @@ for i in range(M):
 print(ans)
 """ # 결과 다르게 나옴
 
+import sys
+input=sys.stdin.readline
 
+N,M=map(int,input().split())
+A=list(map(int,input().split())) + [0]
+prefix=[0]*M
+
+for i in range(N):
+    A[i] += A[i-1]
+    prefix[A[i]%M]+=1
+ans = prefix[0]
+for i in prefix:
+    ans+=i*(i-1)//2
+print(ans)
