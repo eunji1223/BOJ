@@ -61,7 +61,7 @@ for i in range(M):
     else: ans+=prefix[i]*(prefix[i]+1)>>1
 print(ans)
 """ # 결과 다르게 나옴
-
+"""
 import sys
 input=sys.stdin.readline
 
@@ -76,3 +76,4 @@ ans = prefix[0]
 for i in prefix:
     ans+=i*(i-1)//2
 print(ans)
+""" # 이것도 결과 다르게 나옴?!
