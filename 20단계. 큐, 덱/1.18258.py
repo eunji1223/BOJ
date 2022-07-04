@@ -1,3 +1,6 @@
+import sys
+input=sys.stdin.readline
+
 class Queue:
     def __init__(self):
         self.items=[]
@@ -16,7 +19,6 @@ class Queue:
             self.front+=1
             return x
     def front(self):
-        print("실행")
         if self.size()==0 or self.front==len(self.items):
             print("실행")
             return -1
@@ -50,6 +52,5 @@ for i in range(N):
         print(Q.size())
     elif 'empty' in order:
         print(Q.empty())
-
 
         

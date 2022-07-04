@@ -1,3 +1,5 @@
+import sys
+input = sys.stdin.readline
 
 class Queue:
     def __init__(self):
