@@ -16,10 +16,12 @@ class Queue:
             self.front+=1
             return x
     def front(self):
+        print("실행")
         if self.size()==0 or self.front==len(self.items):
+            print("실행")
             return -1
         else:
-            print(self.front)
+            print(self.items[self.front])
             return self.items[self.front]
     def back(self):
         if self.size()==0 or self.front==len(self.items):
